@@ -1,0 +1,19 @@
+.tc-container{
+	@extend .container;
+}
+
+.tc-row{
+	@extend .row;
+}
+
+.tc-col{
+	@extend .col-12;
+	@extend .col-md-6;
+}
+
+#orchard-weddings{
+	.tc-col{
+		@extend .col-12;
+		@extend .col-lg-6;
+	}
+}

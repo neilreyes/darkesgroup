@@ -1,0 +1,50 @@
+.btn{
+	font-weight: 700;
+	font-family: $montserrat;
+	font-size: 14px;
+	border: 0px none rgba(0,0,0,0);
+	display: inline-block;
+	padding: 13px 18px;
+
+	&-primary{
+		color: #ffffff;
+		background-color: $red;
+		border: 1px solid rgba(0,0,0,0);
+
+		&:hover,
+		&:focus,
+		&:active{
+			color: $red !important;
+			background-color: transparent !important;
+			border: 1px solid $red !important;
+			outline: 0px !important;
+			box-shadow: 0 0 0 rgba(0,0,0,0) !important;
+		}
+
+		&-inverted{
+			color: $red;
+			border: 1px solid $red;
+
+			&:hover,
+			&:focus,
+			&:active{
+				color: #ffffff;
+				border: 1px solid $red;
+				background-color: $red;
+			}
+		}
+	}
+
+	&:hover,
+	&:active,
+	&:focus{
+		box-shadow: 0px 0px 0px rgba(0,0,0,0);
+		outline: 0px none;
+	}
+}
+
+.module{
+	.btn{
+		margin: 13px 8px 8px 0px;
+	}
+}

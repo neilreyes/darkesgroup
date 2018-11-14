@@ -1,0 +1,49 @@
+.contact-details{
+	@extend .list-unstyled;
+	@extend .list-inline;
+
+	li{
+		display: inline-block;
+
+		a{
+			height: 40px;
+			padding:9px 11px !important;
+			width: 100% !important;
+
+			span{
+				height: 25px;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.cd-phone{
+	background-color: #ffffff;
+	-webkit-mask-position: center center;
+	mask-position: center center;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: 100%;
+	        mask-size: 100%;
+	-webkit-mask-image: url(../images/call-ico.svg);
+	mask-image: url(../images/call-ico.svg);
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+
+.cd-envelope{
+	background-color: #ffffff;
+	-webkit-mask-position: center center;
+	mask-position: center center;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: 100%;
+	        mask-size: 100%;
+	-webkit-mask-image: url(../images/mail-ico.svg);
+	mask-image: url(../images/mail-ico.svg);
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}

@@ -1,0 +1,23 @@
+.social-media-channels{
+	@extend .list-unstyled;
+	@extend .list-inline;
+
+	li{
+		display: inline-block;
+
+		a{
+			&:hover,
+			&:active,
+			&:focus{
+				border-bottom: 0px none rgba(0,0,0,0);
+			}
+		}
+	}
+}
+
+.site-header-sc{
+	position: absolute;
+	z-index: 1799;
+	right: 0;
+	bottom: 100%;
+}

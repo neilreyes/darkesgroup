@@ -1,0 +1,123 @@
+body,html{
+	font-family: $opensans;
+	color: $c-para;
+	font-weight: 600;
+}
+
+h1{
+	font-size: 40px;
+	color: #000000;
+	font-weight: 400;
+	font-family: $robotoslab;
+}
+
+h2{
+	font-size: 38px;
+	color: #000000;
+	font-weight: 400;
+	font-family: $robotoslab;
+}
+
+h3{
+	color: #000000;
+	font-weight: 400;
+	font-family: $robotoslab;
+}
+
+h4{
+	color: #000000;
+	font-weight: 400;
+	font-family: $robotoslab;
+}
+
+h5{
+    color: #000000;
+	font-weight: 400;
+	font-family: $robotoslab;
+}
+
+h6{
+	color: #000000;
+	font-weight: 400;
+	font-family: $robotoslab;
+}
+
+.lead{
+	color: #404040;
+	font-size: 20px;
+	font-style: italic;
+	margin: 15px 0;
+}
+
+a{
+	color: $red;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	text-decoration: none;
+	position: relative;
+
+	&:after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		background-color: $red;
+		visibility: hidden;
+		-webkit-transform: scaleX(0);
+		        transform: scaleX(0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+	}
+
+	&:hover,
+	&:focus,
+	&:active{
+		color: $red;
+		text-decoration: none;
+		border-bottom: 2px solid $red;
+
+		&:after{
+			visbility: visible;
+			-webkit-transform: scaleX(1);
+			        transform: scaleX(1);
+		}
+	}
+}
+
+p,
+ul li,
+ol li,
+span{
+	line-height: 24px;
+	font-weight: 400;
+	font-size: 15px;
+	color: $c-para;
+}
+
+sub{
+	font-family: $montserrat;
+	font-weight: bold;
+	color: $red;
+	font-size: 12px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	position: relative;
+
+	&:after{
+		background-color: $red;
+		position: absolute;
+		bottom: -7px;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 2px;
+	}
+
+}
+
+cite{
+	font-family: $montserrat;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+}

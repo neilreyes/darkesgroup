@@ -1,0 +1,180 @@
+.menu{
+	@extend .list-unstyled;
+	@extend .list-inline;
+	margin: 0;
+
+	a {
+		padding: 15px;
+		-webkit-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+
+		span{
+			font-size: 14px;
+			color: #797979;
+			font-family: $montserrat;
+			font-weight: bold;
+		}
+	}
+
+	> li{
+		display: inline-block;
+
+		> a {
+			font-weight: bold;
+			padding: 30px 15px;
+
+			&:hover,
+			&:focus,
+			&:active{
+				
+				span{
+					color: $red;
+				}
+
+				border-bottom: 0px none rgba(0,0,0,0);
+			}
+
+			@media screen and (min-width: 992px){
+				font-size: 12px;
+				padding: 30px 10px;
+			}
+
+			@media screen and (min-width: 1170px){
+				font-size: 14px;
+				padding: 30px 15px;
+			}
+		}
+
+		&.current-menu-item{
+			> a{
+				span{
+					color: #000000;
+				}
+			}
+		}
+	}
+}
+
+.nav-primary{
+	@extend .ml-auto;
+	display: none;
+
+	@media screen and (min-width: 992px){
+		display: block;
+	}
+}
+
+.m-toggle{
+	display: block;
+	@extend .btn;
+	@extend .btn-primary;
+	height: 38px;
+	padding: 9px;
+	position: relative;
+
+	svg{
+		height: 18px;
+		width: 28px;
+	}
+
+	&:before{
+		display: none;
+		content: '';
+		-webkit-mask-position: center center;
+		mask-position: center center;
+		-webkit-mask-repeat: no-repeat;
+		mask-repeat: no-repeat;
+		-webkit-mask-size: cover;
+		        mask-size: cover;
+		-webkit-mask-image: url(../images/hamburger.svg);
+		mask-image: url(../images/hamburger.svg);
+		width: 40px;
+		height: 40px;
+	}
+
+	&:hover,
+	&:focus,
+	&:active{
+		background: #000000;
+		border: 1px solid #000000;
+
+		svg{
+			fill: $red;
+		}
+	}
+
+	@media screen and (min-width: 992px){
+		display: none;
+	}
+}
+
+.slideout-menu{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
+  min-height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 0;
+  display: none;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #FFF; /* A background-color is required */
+  min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+  display: block;
+}
+
+#menu-mobile{
+	background: rgba(0,0,0,1);
+
+	.nav-primary{
+		display: block;
+	}
+
+	ul{
+		@extend .list-unstyled;
+
+		li{
+			&.current-menu-item{
+				> a{
+					background-color: $red;
+				}
+			}
+		}
+
+		a{
+			display: inline-block;
+			width: 100%;
+			padding: 20px;
+			border-bottom: 1px solid rgba(255,255,255,0.1);
+
+			span{
+				font-size: 15px;
+				font-weight: bold;
+				color: #ffffff;
+			}
+		}
+	}
+}

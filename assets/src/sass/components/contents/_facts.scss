@@ -1,0 +1,52 @@
+.facts{
+	background-color: #f4feff;
+	position: relative;
+
+	&:before{
+		position: absolute;
+		content: '';
+		background: $red;
+		height: 20px;
+		top: 18px;
+		left: 0;
+		width: 100%;
+		z-index: 5;
+
+		@media screen and (min-width: 768px){
+			height: 30px;
+			top: 26px;
+		}
+	}
+}
+
+.fc-container{
+	@extend .container;
+}
+
+.fc-row{
+	@extend .row;
+}
+
+.fc-entries{
+	position: relative;
+	margin-top: -40px;
+	z-index: 5;
+	@extend .justify-content-center;
+	@extend .d-flex;
+	@extend .col-12;
+	@extend .list-unstyled;
+}
+
+.fc-entry{
+	padding: 0 9px;
+	width: 25%;
+
+	@media screen and (min-width: 768px){
+		width: auto;
+	}
+}
+
+.fc-image{
+	width: 100%;
+	height: auto;
+}

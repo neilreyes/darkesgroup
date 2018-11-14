@@ -1,0 +1,165 @@
+<?php
+
+/**
+Template Name: AppleShack Shop
+Description: Custom page template
+*/
+
+$appleshack = get_field('appleshack_fields');
+
+genesis();?>
+
+<div id="db-sec1" class="appleshack-banner" style="background-image:url('<?php echo esc_url($appleshack['background_image']['url']); ?>')">
+	<div class="container">
+		<div class="inner-cont">
+			<div class="first-img">
+				<?php if( $appleshack['featured_image'] ): ?>
+					<img src="<?php echo esc_url($appleshack['featured_image']['url']); ?>" />
+				<?php endif; ?>				
+			</div>
+			<div class="second-img">
+				<?php if( $appleshack['logo'] ): ?>
+					<img src="<?php echo esc_url($appleshack['logo']['url']); ?>" />
+				<?php endif; ?>
+			</div>
+			<?php if( $appleshack['caption'] ): ?>
+				<p><?php echo $appleshack['caption']; ?></p>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>
+
+<div id="orchard-picking" class="appleshack-section1" style="background-image:url('<?php the_field('apple_sec2_background_image'); ?>')">
+	<div class="container">
+		<div class="tc-row">
+			<div class="tc-col">
+				<?php if( get_field('apple_sec2_title') ): ?>
+					<p><sub><?php the_field('apple_sec2_title'); ?></sub></p>
+				<?php endif; ?>
+				<?php if( get_field('apple_sec2_subtitle') ): ?>
+					<h2><?php the_field('apple_sec2_subtitle'); ?></h2>
+				<?php endif; ?>
+				<?php if( get_field('apple_sec2_quote') ): ?>
+					<p class="lead"><?php the_field('apple_sec2_quote'); ?></p>
+				<?php endif; ?>
+				<?php if( get_field('apple_sec2_description') ): ?>
+					<?php the_field('apple_sec2_description'); ?>
+				<?php endif; ?>
+				<?php if( get_field('apple_sec2_button_label') ): ?>
+					<a class="btn btn-primary" href="<?php the_field('apple_sec2_button_link'); ?>"><?php the_field('apple_sec2_button_label'); ?></a>
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="orchard-events" class="appleshack-section2" style="background-image:url('<?php the_field('apple_sec3_background_image'); ?>')">
+	<div class="container">
+		<div class="tc-row">
+			<div class="tc-col appleshack-left">
+				<?php if( get_field('apple_sec3_title') ): ?>
+					<p><sub><?php the_field('apple_sec3_title'); ?></sub></p>
+				<?php endif; ?>
+				<?php if( get_field('apple_sec3_subtitle') ): ?>
+					<h2><?php the_field('apple_sec3_subtitle'); ?></h2>
+				<?php endif; ?>
+			</div>
+			<div class="tc-col appleshack-right">
+				<?php if( get_field('apple_sec3_description') ): ?>
+					<?php the_field('apple_sec3_description'); ?>
+				<?php endif; ?>
+				
+				<?php if(get_field('apple_sec3_button_area')): ?>
+					<?php $btn=0;?>
+					<?php while(has_sub_field('apple_sec3_button_area')): ?>
+						<?php $btn++; ?>
+						<?php if($btn==1) { ?>
+							<a class="btn btn-primary" href="<?php the_sub_field('apple_sec3_button_link'); ?>"><?php the_sub_field('apple_sec3_button_label'); ?></a>
+						<?php } else { ?>
+							<a class="btn btn-primary-inverted" href="<?php the_sub_field('apple_sec3_button_link'); ?>"><?php the_sub_field('apple_sec3_button_label'); ?></a>
+						<?php } ?>
+					<?php endwhile; ?>
+					
+				<?php endif; ?>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<?php if(get_field('apple_sec3_product_slider')): ?>
+		<div class="appleshack-products">
+			<div class="container">
+				<div class="appleshack-slider">
+					
+					<?php while(has_sub_field('apple_sec3_product_slider')): ?>
+						<div class="appleshack-slide">
+							<img src="<?php the_sub_field('apple_sec3_product_image'); ?>">
+							<div class="product-content">
+								<h6><?php the_sub_field('apple_sec3_product_title'); ?></h6>
+								<?php the_sub_field('apple_sec3_product_description'); ?>
+							</div>
+						</div>
+					<?php endwhile; ?>
+					
+				</div>
+			</div>
+		</div>
+	<?php endif; ?>
+</div>
+
+<?php do_action('dg_darkes_brewing_after_content'); ?>
+
+<?php if(get_field('page_about_section')) { ?>
+	<?php get_template_part('/lib/template-part/global-sections/aboutus', 'section' ); ?>
+<?php } ?>
+
+<?php if(get_field('page_testimonial_section')) { ?>
+	<?php 
+		get_template_part('/lib/template-part/global-sections/testimonials', 'section' );
+	?>
+<?php } ?>
+
+<?php if(get_field('page_cta_section')) { ?>
+	<?php
+		get_template_part('/lib/template-part/global-sections/cta', 'section' );	
+	?>
+<?php } ?>
+
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/src/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/src/slick/slick-theme.css"/>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/src/slick/slick.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.appleshack-slider').slick({
+        slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: true,
+		autoplay: true,
+		  responsive: [
+			{
+			  breakpoint: 992,
+			  settings: {
+				slidesToShow: 2,
+			  }
+			},
+			 {
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 1,
+			  }
+			}, 
+			{
+			  breakpoint: 641,
+			  settings: {
+				arrows: false,
+				slidesToShow: 1,
+				  dots: true,
+			  }
+			}, 
+			
+		  ]
+      });
+    });
+  </script>
+
+<?php do_action( 'genesis_footer' ); ?>

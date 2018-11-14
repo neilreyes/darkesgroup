@@ -1,0 +1,45 @@
+.site-branding{
+	width: auto;
+	height: auto;
+	display: inline-block;
+	border: 0px none rgba(0,0,0,0);
+	position: relative;
+	left: 14px;
+
+	&:hover,
+	&:focus,
+	&:active{
+		border: 0px none rgba(0,0,0,0);
+		text-decoration: none;
+	}
+
+	img,
+	svg{
+		width: 150px;
+		height: auto;
+
+		@media screen and (min-width: 992px){
+			height: 67px;
+		}
+
+		@media screen and (min-width: 1170px){
+			width: 250px;
+		}
+	}
+
+	@media screen and (min-width: 768px){
+		left: 0;
+	}
+}
+
+.site-footer{
+	.site-branding{
+		width: 200px;
+		margin: 0 auto;
+		display: block;
+
+		@media screen and (min-width: 768px){
+			width: auto;
+		}
+	}
+}

@@ -1,0 +1,643 @@
+/*!
+	Theme Name: Darkes Group
+	Description: Darkes Group Theme
+	Author: Rayneil Reyes
+	Author URI: http://www.rayneilreyes.com
+	Template: genesis
+	Text Domain: darkesgroup
+*/
+
+.clear {
+	display: block;
+	clear: both;
+	width: 100%;
+}
+.my-container{
+	max-width: 1100px;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+#menu-mobile {
+    /*display: none;*/
+}
+
+.home #menu-mobile {
+    display: block;
+}
+
+#db-sec1 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0 100px;
+	margin-top: 0;
+	background-position: center;
+}
+#db-sec1 .second-img,
+#db-sec1 .first-img {
+    text-align: center;
+}
+#db-sec1 .inner-cont p {
+    text-align: center;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Open Sans";
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.dg-section{
+	background-size: cover;
+	padding: 0 0 50px 0;
+}
+
+#db-sec2,
+#db-sec3 {
+    background-repeat: no-repeat;
+    background-position: 45% center;
+    /* padding: 100px 0; */
+}
+#db-sec3 {
+    background-position: left;
+}
+#db-sec2 .inner-cont,
+#db-sec3 .inner-cont {
+    width: 50%;	
+}
+#db-sec3 .inner-cont {
+	float: right;
+}
+#db-sec2 .inner-cont h3,
+#db-sec3 .inner-cont h3 {
+    color: #ed3338;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 23px;
+    text-decoration: none;
+    letter-spacing: 2.2px;
+    font-weight: 600;
+    display: inline-block;
+    border-bottom: 1px solid #ed3338;
+}
+#db-sec2 .inner-cont p em,
+#db-sec3 .inner-cont p em {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    color: #484848;
+}
+
+.site-footer .sf-row {
+    width: 100%;
+}
+
+.about-global,
+.testimonial-global {
+	padding: 50px 0;
+}
+
+.testimonial-global .pts-col {
+	text-align: center;
+}
+
+.cta-global {
+    padding: 80px 0 150px;
+    background-color: #232527;
+}
+
+.orchard-banner .first-img img {
+    /* margin-bottom: -35px; */
+}
+.orchard-banner {
+	text-align: center;
+}
+.orchard-menu-banner {
+    padding: 0;
+    margin: 30px auto 0;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    list-style: none;
+}
+
+.orchard-menu-banner li {
+    display: block;
+    float: left;
+	border-left: 2px solid #fff;
+}
+.orchard-menu-banner li:first-child {
+	border-left: none;
+}
+.orchard-menu-banner li a {
+	color: #fff;
+	background-color: #ed3338;
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	padding: 15px 30px;
+}
+#orchard-picking {
+    padding: 139px 0;
+    display: block;
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+#orchard-tour,
+#orchard-photography,
+#orchard-weddings {
+    display: block;
+    background-position: left center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+}
+
+#orchard-tour .inner-col,
+#orchard-photography .inner-col {
+	float: right;
+	display: block;
+	width: 50%;
+}
+
+#orchard-horse-riding {
+    display: block;
+    padding: 70px 0 420px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+#orchard-horse-riding .left-col {
+    display: block;
+    float: left;
+    width: 35%;
+}
+
+#orchard-horse-riding .right-col {
+    display: block;
+    float: right;
+    width: 61%;
+}
+
+#orchard-events {
+    display: block;
+    width: 100%;
+    background-size: 100% auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding: 70px 0 100px;
+    background-color: #f4feff;
+}
+
+#orchard-events .orchard-img img {
+    display: block;
+    margin: 0;
+    border: 6px solid #fff;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0px 4px 40px #9c9c9c;
+}
+
+#orchard-events .orchard-awards {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 70px 0;
+    text-align: center;
+}
+
+#orchard-events .orchard-awards ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+	position: relative;
+}
+
+#orchard-events .orchard-awards ul li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px;
+	max-width: 24%;
+}
+
+#orchard-events .orchard-awards ul li img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#orchard-events .orchard-awards::before {
+    content: '';
+    width: 100%;
+    height: 25px;
+    background-color: #ed3338;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+}
+.appleshack-banner .first-img img {
+    margin-bottom: -43px;
+}
+.appleshack-products {
+    width: 100%;
+    padding: 70px 0;
+}
+.appleshack-products .appleshack-slide {
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    margin: 0 15px;
+	position: relative;
+}
+.appleshack-products .appleshack-slide:after {
+	content: '';
+	background-color: #ed3338;
+	height: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+.appleshack-products .appleshack-slide:hover::after {
+	height: 10px;
+}
+
+.appleshack-products .appleshack-slide img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.appleshack-products .appleshack-slide .product-content {
+	padding: 20px 20px 30px;
+	display: block;
+	text-align: center;
+}
+
+.appleshack-products .appleshack-slide h6 {
+	font-size: 20px;
+	line-height: 28px;
+	color: #000000;
+	font-weight: 900;
+	font-family: "Open Sans", sans-serif;
+}
+
+.appleshack-products .appleshack-slide p {
+	margin: 0;
+	color: #818181;
+}
+
+
+.appleshack-products .slick-next,
+.appleshack-products .slick-next:hover,
+.appleshack-products .slick-next:focus {
+    background-image: url(/wp-content/uploads/2018/07/slider-next.png);
+}
+.appleshack-products .slick-prev,
+.appleshack-products .slick-prev:hover,
+.appleshack-products .slick-prev:focus {
+    background-image: url(/wp-content/uploads/2018/07/slider-prev.png);
+}
+.appleshack-products .slick-arrow:before {
+	display: none;
+}
+.appleshack-products .slick-arrow:hover,
+.appleshack-products .slick-arrow:focus {
+	opacity: 0.9;
+}
+.appleshack-products .slick-arrow {
+	width: 33px;
+	height: 60px;
+	background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.appleshack-slider .slick-list {
+	padding: 20px 0;
+}
+
+.tc-col h2 span{
+	font-size: 38px !important;
+}
+
+#world-cider-awards{
+	background-position: top right;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#world-cider-awards .row{
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 50px;
+}
+
+#world-cider-awards h2{
+	color: #fff;
+	font-size: 28px;
+	padding: 0 50px;
+}
+
+#orchard-weddings{
+	background-repeat: no-repeat;
+	background-position: 45% center;
+	/* background-size: contain; */
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (min-width:768px){
+	#world-cider-awards .row{
+		justify-content: flex-start;
+		padding: initial;
+		text-align: left;
+	}
+
+	#world-cider-awards{
+		background-position: top right;
+	}
+
+	.serv-slide .se-content-box{
+		min-height: 160px;
+		height: 160px;
+	}
+
+	.product-content{
+		min-height: 206px;
+		height: 206px;
+	}
+}
+
+@media screen and (min-width:992px){
+	#world-cider-awards{
+		background-size: auto;
+	}
+
+	.dg-section .inner-cont{
+		padding: 70px 0 60px 0;
+	}
+}
+
+@media screen and (max-width: 4000px){
+	.orchard-menu-banner{
+		display: inline-block;
+	}
+
+	#orchard-tour,
+	#orchard-photography,
+	#orchard-weddings{
+		padding: 80px 0;
+	}
+
+	#orchard-picking sub,
+	#orchard-picking p,
+	#orchard-picking h2 {
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	body img {
+		width: auto;
+		max-width: 100%;
+	}
+	.sh-top .sh-row {
+		padding-right: 0;
+	}
+	.site-header .sh-top::before {
+		-webkit-mask-size: 180%;
+		mask-size: 180%;
+		height: 130px;
+		width: 100px;
+	}
+	#db-sec2, #db-sec3 {
+		/* padding: 70px 0; */
+	}
+	#db-sec2 {
+		background-position: 130%;
+	}
+
+	.page-template-darkes-brewing #db-sec2{
+		background-position: center;
+	}
+
+	#db-sec3, #orchard-tour,#orchard-photography {
+		background-position: 55%;
+	}
+	.second-img img {
+		max-width: 320px;
+	}
+	#db-sec1 .inner-cont p {
+		font-size: 20px;
+		line-height: 31px;
+		margin-top: 15px;
+	}
+	.orchard-banner .first-img img {
+		margin-bottom: 0;
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.dg-section{
+		background-image: none !important;
+	}
+
+	#db-sec2,
+	#db-sec3,
+	#orchard-tour,
+	#orchard-photography {
+		background-position: center;
+		background-size: cover;
+		position: relative;
+	}
+	#db-sec2:before,
+	#db-sec3:before,
+	#orchard-tour:before,
+	#orchard-photography:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.8);
+	}
+	#db-sec3:before {
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+	#db-sec2 .inner-cont, #db-sec3 .inner-cont, #orchard-tour, #orchard-photography {
+		width: 100%;
+		position: relative;
+	}
+	#orchard-picking .tc-col,
+	#orchard-events .tc-col {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		flex: none;
+		-ms-flex: none;
+		position: relative;
+	}
+	#orchard-picking {
+    	padding: 100px 0;
+	}
+	#orchard-tour, #orchard-photography {
+		padding: 70px 0;
+	}
+	#orchard-tour .inner-col, #orchard-photography .inner-col {
+		float: none;
+		width: 100%;
+		position: relative;
+	}
+	#orchard-events .tc-col.orchard-img {
+		margin-bottom: 25px;
+	}
+	#orchard-events .tc-col.orchard-img img {
+		margin: 0 auto;
+	}
+	#orchard-horse-riding {
+		padding-bottom: 290px;
+	}
+	#orchard-horse-riding .right-col {
+		width: 50%;
+	}
+	#orchard-horse-riding .left-col {
+		width: 45%;
+	}
+	.testi-slide .pts-image {
+		max-width: 250px;
+	}
+	.appleshack-banner .first-img img {
+		margin-bottom: -45px;
+		max-width: 300px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	#orchard-picking sub,
+	#orchard-picking h2 {
+		color: #000;
+	}
+
+	#orchard-picking p{
+		color: #818181;
+	}
+
+	.second-img img {
+		max-width: 250px;
+	}
+	body h2 {
+		font-size: 29px;
+	}
+	#db-sec1 .inner-cont p {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	#db-sec1 {
+		padding: 200px 0 50px;
+	}
+	.module.cta-global {
+		padding: 50px 0;
+	}
+	footer.site-footer {
+		margin-top: 0;
+		padding-top: 30px;
+	}
+	.site-footer .sf-upper {
+		bottom: 0;
+	}
+	.site-footer .sf-lower {
+		padding: 0;
+		margin-top: 0;
+		mask-image: none;
+		-webkit-mask-image: none;
+	}
+	.row, .fc-row, .hb-row, .hb-row-content, .serv-row, .tc-row, .sf-row, .sh-row, .pcta-row, .pts-row {
+		margin: 0 auto !important;
+	}
+	.orchard-menu-banner li a {
+		padding: 12px 20px;
+	}
+
+	#orchard-picking,
+	#orchard-tour,
+	#orchard-events,
+	#orchard-photography,
+	#orchard-weddings{
+		padding: 0 0 50px 0;
+	}
+
+	#orchard-horse-riding .right-col {
+		width: 100%;
+		float: none;
+		position: relative;
+	}
+	#orchard-horse-riding .left-col {
+		width: 100%;
+		margin-bottom: 20px;
+		float: none;
+		position: relative;
+	}
+	#orchard-horse-riding {
+		padding-bottom: 180px;
+		padding-top: 50px;
+		position: relative;
+	}
+	#orchard-horse-riding:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background-color: rgba(255, 255, 255, 0.85);
+	}
+	#orchard-events .orchard-awards {
+		padding: 30px 0;
+	}
+	body .lead {
+		font-size: 16px;
+	}
+	p, ul li, ol li, span {
+		line-height: 24px !important;
+		font-size: 14px !important;
+	}
+	.appleshack-section1 {
+		position: relative;
+	}
+	.appleshack-section1:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	.appleshack-products {
+		padding-top: 30px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.orchard-menu-banner{
+		display: none;
+	}
+
+	#orchard-horse-riding {
+    	padding-bottom: 70px;
+	}
+}

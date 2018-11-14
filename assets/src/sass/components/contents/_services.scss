@@ -1,0 +1,105 @@
+#services{
+	.tc-col--2{
+		@media screen and (min-width: 992px){
+			margin-top: 46px;
+		}
+	}
+}
+
+.service-entries{
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-attachment: scroll;
+	background-size: 100%;
+}
+
+.serv-list-entries{
+	@extend .list-unstyled
+}
+
+.serv-container{
+	@extend .container;
+}
+
+.serv-row{
+	@extend .row;
+}
+
+.serv-slider{
+	@extend .swiper-container;
+	@extend .col-12;
+}
+
+.serv-wrapper{
+	@extend .swiper-wrapper;
+}
+
+.serv-slide-prev{
+	@extend .swiper-slide-prev;
+}
+
+.serv-slide{
+	@extend .swiper-slide;
+	@extend .text-center;
+	
+	.se-content-box{
+		padding: 30px;
+	}
+
+	&[data-count="1"],
+	&[data-count="7"]{
+		.se-content-box{
+			background-color: $green;
+		}
+	}
+
+	&[data-count="2"],
+	&[data-count="8"]{
+		.se-content-box{
+			background-color: $tortoise;
+		}
+	}
+
+	&[data-count="3"],
+	&[data-count="9"]{
+		.se-content-box{
+			background-color: $red;
+		}
+	}
+
+	&[data-count="4"]{
+		.se-content-box{
+			background-color: $yellow;
+		}
+	}
+
+	&[data-count="5"]{
+		.se-content-box{
+			background-color: $blue;
+		}
+	}
+
+	&[data-count="6"]{
+		.se-content-box{
+			background-color: $brown;
+		}
+	}
+
+}
+
+.se-title{
+	color: #ffffff;
+}
+
+.se-description{
+	color: #ffffff;
+}
+
+.serv-slide-next{
+	@extend .swiper-slide-next;
+}
+
+.serv-image{
+	width: 100%;
+	height: 100%;
+}

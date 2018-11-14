@@ -1,0 +1,43 @@
+#primary-cta{
+	margin-top: -26px;
+	-webkit-mask-image: url(../images/cta-bg.svg);
+	mask-image: url(../images/cta-bg.svg);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: cover;
+    mask-size: cover;
+    width: 100%;
+    position: relative;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: 2;
+	background-size: cover;
+
+	@media screen and (min-width: 1170px){
+		background-size: 100%;
+	}
+
+	h2, p{
+		color: #ffffff;
+	}
+}
+
+.pcta-container{
+	@extend .container;
+	padding: 50px 15px;
+
+	@media screen and (min-width: 768px){
+		padding-top: initial;
+		padding-bottom: initial;
+	}
+}
+
+.pcta-row{
+	@extend .row;
+}
+
+.pcta-col{
+	@extend .col-12;
+	@extend .col-md-6;
+}

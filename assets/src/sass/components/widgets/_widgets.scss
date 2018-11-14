@@ -1,0 +1,51 @@
+.widget{
+	img{
+		width: auto;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	div{
+		text-align: center;
+
+		@media screen and (min-width: 768px){
+			text-align: initial;
+		}
+	}
+
+	.gallery{
+		@extend .d-flex;
+		@extend .justify-content-between;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+
+		@media screen and (min-width: 768px){
+			-ms-flex-wrap: nowrap;
+			    flex-wrap: nowrap;
+		}
+
+		&-item{
+			width: 33.33%;
+
+			a{
+				width: 100%;
+				display: inline-block;
+				padding: 0 8px;
+
+				&:hover,
+				&:focus,
+				&:hover{
+					border-bottom: 0px solid rgba(0,0,0,0);
+				}
+
+				img{
+					width: 100%;
+				}
+			}
+
+			@media screen and (min-width: 768px){
+				width: auto;
+			}
+		}
+	}
+}

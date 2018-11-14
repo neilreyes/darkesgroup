@@ -1,0 +1,47 @@
+.site-footer{
+	position: relative;
+	z-index: 3;
+	margin-top: -220px;
+}
+
+.sf-upper{
+	position: relative;
+	z-index: 3;
+	bottom: -215px;
+	width: 100%;
+
+	@media screen and (min-width: 768px){
+		bottom: -135px;
+	}
+}
+
+.sf-lower{
+	padding: 343px 0 0px 0;
+	background: #ffffff;
+	-webkit-mask-image: url(../images/footer.svg);
+	mask-image: url(../images/footer.svg);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-size: cover;
+    mask-size: cover;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-top: -139px;
+
+    @media screen and (min-width: 768px){
+    	padding:120px 0 0px 0;
+    	margin-top: 0px;
+    }
+}
+
+.sf-container{
+	position: relative;
+	@extend .container;
+}
+
+.sf-row{
+	padding: 12px 0;
+	@extend .row;
+}
+

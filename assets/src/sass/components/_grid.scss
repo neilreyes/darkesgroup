@@ -1,0 +1,20 @@
+.module{
+	@media screen and (max-width: 768px){
+		padding: 25px 0; 
+	}
+}
+
+#introduction{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachemt: scroll;
+	background-size: cover;
+}
+
+.site-inner{
+	position: relative;
+	z-index: 2;
+	@media screen and (min-width: 992px){
+		padding-top: 90px;
+	}
+}
