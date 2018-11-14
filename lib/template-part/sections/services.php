@@ -26,8 +26,9 @@
 						</div>
 					<?php $i++; endwhile; ?>
 				</div>
-				<div class="serv-slide-prev"></div>
-				<div class="serv-slide-next"></div>
+				<div class="serv-button-prev"></div>
+				<div class="serv-button-next"></div>
+				<div class="serv-pagination"></div>
 			</div>
 		</div>
 	</div>
