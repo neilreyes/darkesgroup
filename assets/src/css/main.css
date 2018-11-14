@@ -14540,7 +14540,8 @@ img.aligncenter {
 }
 
 /* line 107, ../sass/components/contents/_services.scss */
-.serv-button-next {
+.serv-button-next,
+.testi-button-next {
   background: url(../images/arrow.png) no-repeat scroll center center/80% white;
   border-radius: 100%;
   position: absolute;
@@ -14555,8 +14556,9 @@ img.aligncenter {
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 122, ../sass/components/contents/_services.scss */
-.serv-button-prev {
+/* line 123, ../sass/components/contents/_services.scss */
+.serv-button-prev,
+.testi-button-prev {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -14572,23 +14574,23 @@ img.aligncenter {
   border-radius: 100%;
 }
 
-/* line 138, ../sass/components/contents/_services.scss */
+/* line 140, ../sass/components/contents/_services.scss */
 .swiper-button-disabled {
   display: none !important;
 }
 
-/* line 142, ../sass/components/contents/_services.scss */
+/* line 144, ../sass/components/contents/_services.scss */
 .serv-image {
   width: 100%;
   height: 100%;
 }
 
-/* line 147, ../sass/components/contents/_services.scss */
+/* line 149, ../sass/components/contents/_services.scss */
 .serv-pagination {
   text-align: center;
 }
 
-/* line 151, ../sass/components/contents/_services.scss */
+/* line 153, ../sass/components/contents/_services.scss */
 .serv-pagination
 .swiper-pagination-bullet {
   border-radius: 100%;
@@ -14603,7 +14605,7 @@ img.aligncenter {
   background: transparent;
 }
 
-/* line 165, ../sass/components/contents/_services.scss */
+/* line 167, ../sass/components/contents/_services.scss */
 .serv-pagination .swiper-pagination-bullet-active {
   background: #ed3338;
   border-color: #ed3338;

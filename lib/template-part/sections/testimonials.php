@@ -24,6 +24,8 @@
             </div>
           <?php } wp_reset_postdata(); ?>
         </div>
+        <div class="testi-button-prev"></div>
+        <div class="testi-button-next"></div>
         <div class="testi-pagination"></div>
       </div>
     </div>

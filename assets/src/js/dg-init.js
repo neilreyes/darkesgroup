@@ -108,6 +108,10 @@ var testimonials = new Swiper('.testi-slider', {
   	  	bulletClass: 'testi-pagination-bullet',
   	  	bulletActiveClass: 'testi-pagination-bullet-active'
   	},
+  	navigation: {
+  		nextEl: '.testi-button-prev',
+  		prevEl: '.testi-button-next',
+  	},
   	effect: 'fade',
   	containerModifierClass: 'testi-slider',
   	wrapperClass: 'testi-wrapper',
