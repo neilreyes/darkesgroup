@@ -121,6 +121,7 @@ var testimonials = new Swiper('.testi-slider', {
     slidesToShow: 3,
 	slidesToScroll: 1,
 	arrows: true,
+	dots: true,
 	autoplay: true,
 	  responsive: [
 		{
