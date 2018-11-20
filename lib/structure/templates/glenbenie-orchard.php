@@ -105,8 +105,8 @@
 					<?php if( $gop['go_photog_title'] ): ?>
 						<h2><?php echo $gop['go_photog_title']; ?></h2>
 					<?php endif; ?>
-					<?php if( $gop['go_totf_content'] ): ?>
-						<?php echo $gop['go_totf_content']; ?>
+					<?php if( $gop['go_photog_content'] ): ?>
+						<?php echo $gop['go_photog_content']; ?>
 					<?php endif; ?>
 				</div>
 				<div class="clear"></div>
