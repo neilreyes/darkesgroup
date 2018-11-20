@@ -98,10 +98,9 @@ var services = new Swiper('.serv-slider', {
 var testimonials = new Swiper('.testi-slider', {
   	spaceBetween: 20,
   	autoplay: {
-  		delay: 2500,
+  		delay: 8000,
   		disableOnInteraction: false,
   	},
-  	loop: true,
   	pagination: {
   	  	el: '.testi-pagination',
   	  	clickable: true,
@@ -109,8 +108,8 @@ var testimonials = new Swiper('.testi-slider', {
   	  	bulletActiveClass: 'testi-pagination-bullet-active'
   	},
   	navigation: {
-  		nextEl: '.testi-button-prev',
-  		prevEl: '.testi-button-next',
+  		nextEl: '.testi-button-next',
+  		prevEl: '.testi-button-prev',
   	},
   	effect: 'fade',
   	containerModifierClass: 'testi-slider',
@@ -118,6 +117,17 @@ var testimonials = new Swiper('.testi-slider', {
   	slidePrevClass: 'test-slide-prev',
   	slideNextClass: 'test-slide-next',
   	slideClass : 'testi-slide',
+});
+
+testimonials.navigation.nextEl.addEventListener('click', function(event){
+	console.log('next',event);
+	testimonials.slideNext(300, true);	
+});
+
+
+testimonials.navigation.prevEl.addEventListener('click', function(event){
+	console.log('prev',event);
+	testimonials.slidePrev(300, true);	
 });
 
 (function($){
