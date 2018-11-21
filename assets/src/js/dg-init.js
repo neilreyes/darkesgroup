@@ -119,17 +119,6 @@ var testimonials = new Swiper('.testi-slider', {
   	slideClass : 'testi-slide',
 });
 
-testimonials.navigation.nextEl.addEventListener('click', function(event){
-	console.log('next',event);
-	testimonials.slideNext(300, true);	
-});
-
-
-testimonials.navigation.prevEl.addEventListener('click', function(event){
-	console.log('prev',event);
-	testimonials.slidePrev(300, true);	
-});
-
 (function($){
   $('.appleshack-slider').slick({
     slidesToShow: 3,
